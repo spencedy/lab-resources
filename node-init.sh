@@ -2,6 +2,8 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+sudo apt-get install -y nfs-common
+
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
