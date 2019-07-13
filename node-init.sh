@@ -1,5 +1,8 @@
 #/bin/bash
 
+sudo swapoff -a
+sudo sed -ri '/\sswap\s/s/^#?/#/' /etc/fstab
+
 export DEBIAN_FRONTEND=noninteractive
 
 sudo apt-get install -y nfs-common
